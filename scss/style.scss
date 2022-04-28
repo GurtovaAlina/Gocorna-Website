@@ -594,6 +594,10 @@ section {
     @include respond-to(767) {
         flex-direction: column;
     }
+    @media(orientation:landscape) {
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 
 .healthcare__bg {
@@ -602,6 +606,11 @@ section {
     position: relative;
     transition: all 0.5s ease;
     animation: rotate2 6s linear infinite;
+
+    @media(orientation:landscape) {
+        width: 320px;
+        height: 320px;
+    }
 }
 
 @keyframes rotate2 {

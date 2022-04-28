@@ -946,6 +946,16 @@ section {
   }
 }
 
+@media (orientation: landscape) {
+  .healthcare__background {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .healthcare__bg {
   border-radius: 30%;
   -ms-flex-preferred-size: 35%;
@@ -955,6 +965,13 @@ section {
   transition: all 0.5s ease;
   -webkit-animation: rotate2 6s linear infinite;
           animation: rotate2 6s linear infinite;
+}
+
+@media (orientation: landscape) {
+  .healthcare__bg {
+    width: 320px;
+    height: 320px;
+  }
 }
 
 @-webkit-keyframes rotate2 {
