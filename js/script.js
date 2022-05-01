@@ -34,3 +34,20 @@ burger.addEventListener('click', function (event) {
     burgerMenu.classList.toggle('active');
     document.body.classList.toggle('lock');
 });
+
+
+
+const switcher = document.querySelector('.switch');
+
+const color = document.querySelector('link');
+console.log(color);
+
+switcher.addEventListener("click", function(event) {
+    color.classList.toggle('switch');
+    if (color.matches('[class$="switch"]')) {
+        color.setAttribute('href', 'css/style2.css');
+    }
+    else {
+        color.setAttribute('href', 'css/style.css');
+    }
+});
